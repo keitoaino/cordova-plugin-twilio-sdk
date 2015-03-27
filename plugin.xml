@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Copyright (c) 2014 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+-->
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="com.twilio.client"
+    version="21.0.1">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <name>Android Twilio SDK</name>
+
+  <platform name="android">
+    <source-file src="twilioclient-android.jar" target-dir="libs" />
+    <source-file src="armeabi/libtwilio-native.so" target-dir="libs/armeabi" />
+    <source-file src="armeabi-v7a/libtwilio-native.so" target-dir="libs/armeabi-v7a" />
+    <source-file src="mips/libtwilio-native.so" target-dir="libs/mips" />
+    <source-file src="x86/libtwilio-native.so" target-dir="x86/mips" />
+  </platform>
+</plugin>
